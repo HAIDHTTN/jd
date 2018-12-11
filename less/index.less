@@ -1,0 +1,293 @@
+@import 'base.less';
+@main-color:#de181b;
+#layout {
+    background-color: #f5f5f5;  
+     // 头部
+     #header {
+        width: 100vw;
+        height: 45px;
+        background-color: rgba(0,0,0,0);
+        position: fixed;
+        top: 0xp;
+        left: 0px;
+        z-index: 999;
+        display: flex;
+        >.logo {
+            display: block;
+            width: 80px;
+            height: 30px;
+            margin-top: 5px;
+            padding: 0 10px;
+            // background: url(../images/sprites.png) no-repeat 0px -108px/200px 200px  red;
+            background: url(../images/sprites.png);
+            background-size: 200px 200px;
+            background-position: 0px -106px;
+            background-origin: content-box;
+            background-clip: content-box;
+
+        }
+        >form {
+            flex: 1;
+            position: relative;
+            padding: 5px 0px;
+            >i {
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            left: 10px;
+            top: 12px;
+            background: url(../images/sprites.png);
+            background-size: 200px 200px;
+            background-position: -60px -108px;
+            background-origin: content-box;
+            background-clip: content-box;
+           
+            }
+            >.search {
+                height: 35px;
+                width: 100%;
+                padding-left: 30px;
+                border-radius: 17px;
+                
+            }
+        }
+        >.login {
+            width: 50px;
+            height: 30px;
+            color: #fff;
+           line-height: 45px;
+           text-align: center;
+        }
+    }
+    #slideshow {
+        width: 100vw;
+        .swiper-container {
+            .swiper-wrapper {
+                .swiper-slide{
+                    a {
+                        img {
+                            width: 100%;
+                        }
+
+                    }
+                }
+            }
+            
+
+        }
+    }
+    #tap-nav {
+        >ul {
+            width: 100vw;
+            display: flex;
+            padding: 10px 0px;
+            flex-wrap: wrap;
+            background-color: #fff;
+            >li {
+                width: 25vw;
+                >a {
+                    display: block;
+                    text-align: center;
+                    color: #666;
+                    >img {
+                        width: 40px;
+                        height: 40px;
+                    }
+                    >p {
+                        margin: 5px 0px;
+                    }
+                }
+            }
+        }
+    }
+    #product {
+        padding: 10px 10px 60px 10px;
+        #seckill {
+           margin-top: 10px;
+            background-color: #fff;
+            box-shadow: 0px 0px 2px #ccc;
+                
+            .title {
+                background-color: pink;
+                position: relative;
+                display: flex;
+                height: 30px;
+                // line-height: 30px;
+                >img {
+                    width: 20px;
+                    height: 25px;
+                    margin-left: 5px;
+                }
+                >span {
+                    margin-left: 10px;
+                    color: #de181b;
+                }
+                >.seckill-time {
+                    display: inline-block;
+                    margin-left: 10px;
+                    >span {
+                        
+                        display: inline-block;
+                        color: #fff;
+                        width: 15px;
+                        height: 15px;
+                        text-align: center;
+                        margin-top: 8px;
+                        &:not(:nth-of-type(3n)) {
+                            background-color: black;
+                        }
+                        &:nth-child(3n) {
+                            color: black;
+                        }
+                    }
+                }
+                >a {
+                    position: absolute;
+                    right:20px; 
+                    color: #666; 
+                    &::after {
+                        content: ">";
+                    }
+                }
+            }
+            .content {
+               padding: 10px;
+                display: flex;
+                    >li {
+                        font-size: 12px;
+                        >a {
+                            display: block;
+                            width: 100%;
+                            text-align: center;
+                            >img {
+                                width: 100%;
+
+                            }
+                        >p:nth-child(2){
+                            color: #de181b;
+
+                        }
+                        >p:nth-child(3){
+                            color: #666;
+                        }  
+                        
+                        
+                    }
+                }
+            }
+
+        }
+        #supermarket1,
+        #supermarket3 {
+            margin-top: 10px;
+            box-shadow: 0px 0px 2px #ccc;
+            
+            .title {
+                background-color: #fff;
+                >h4{
+                    padding-left: 15px;
+                    position: relative;
+                    line-height: 30px;
+                    &::before {
+                        content: "";
+                        width: 4px;
+                        height: 15px;
+                        background-color: #de181b;
+                        position: absolute;
+                        left: 5px;    
+                        top: 6px;
+                    }
+
+                }
+            }
+            .content {
+                display: flex;
+                >.product-left {
+                    width: 50%;
+                    >a{
+                        display: block;
+                        height: 100%;
+                        width: 100%;
+                        >img {
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                }
+                >.product-right {
+                   width: 50%;
+                a{
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    >img {
+                        height: 50%;
+                        width: 100%;
+                    }
+                }
+
+                   
+                }
+
+            }
+        }
+        #supermarket2 {
+            margin-top: 10px;
+            box-shadow: 0px 0px 2px #ccc;
+            
+            .title {
+                background-color: #fff;
+                >h4{
+                    padding-left: 15px;
+                    position: relative;
+                    line-height: 30px;
+                    &::before {
+                        content: "";
+                        width: 4px;
+                        height: 15px;
+                        background-color: #de181b;
+                        position: absolute;
+                        left: 5px;    
+                        top: 6px;
+                    }
+
+                }
+            }
+            .content {
+                display: flex;
+                >.product-right {
+                    width: 50%;
+                    >a{
+                        display: block;
+                        height: 100%;
+                        width: 100%;
+                        >img {
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                }
+                >.product-left {
+                   width: 50%;
+                a{
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    >img {
+                        height: 50%;
+                        width: 100%;
+                    }
+                }
+
+                   
+                }
+
+            }
+        }
+    }  
+   
+
+}
+   
+
+

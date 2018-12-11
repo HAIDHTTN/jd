@@ -1,0 +1,104 @@
+@import 'base.less';
+#layout {
+    #header {
+      background-color: #ccc;
+      .logo {
+          width: 40px;
+          height: 40px;
+          background-position: -22px 0px;
+          padding: 10px;
+      }
+      .login {
+          display: block;
+          width: 40px;
+          height: 40px;
+          padding: 10px;
+          margin-top: 5px;
+          background: url(../images/sprites.png);
+          background-size: 200px 200px;
+          background-origin: content-box;
+          background-clip: content-box;
+          background-position: -60px 0px;
+      }
+  }
+
+  #main {
+      padding-top: 45px;
+      padding-bottom: 50px;
+      display: flex;
+      .category-left {
+          height: 572px;
+          .swiper-container {
+              height: 572px;
+              .swiper-wrapper {
+                  .swiper-slide {
+                      height: auto;
+                      >ul {
+                          width: 85px;
+                          li {
+                              text-align: center;
+                              &.active {
+                                  a {
+                                      background-color: #fff;
+                                      color: #de181b
+                                  }
+                              }
+                              a {
+                                  background-color: #ccc;
+                                  display: block;
+                                  height: 45px;
+                                  line-height: 45px;
+                                  color: #666;
+                              }
+                          }
+                      }
+                  }
+              }
+          }
+        }
+        .category-right {
+            flex: 1;
+            padding: 10px;
+            height: 572px;
+            .swiper-container {
+                height: 552px;
+                .swiper-wrapper {
+                    .swiper-slide {
+                        height: auto;
+                        .brand {
+                           
+                            .brand-title {
+                                height: 30px;
+                                line-height: 30px;
+                            }
+                            .brand-content {
+                                ul {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    li {
+                                        text-align: center;
+                                        width: 33.33%;
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                                
+                            }
+                        }
+
+                    }
+                }
+                .swiper-scrollbar {
+                    background-color: pink;
+                    .swiper-scrollbar-drag {
+                        background-color: #de181b;
+                    }
+                }
+            }
+            
+        }
+    }
+    
+
+}
